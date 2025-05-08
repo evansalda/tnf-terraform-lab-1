@@ -28,10 +28,18 @@ Il s’agit d’une simple page web sur laquelle le visiteur est invité à soum
 
 Avant de démarrer ce lab, assurez-vous de disposer des éléments suivants :
 - Compte administrateur sur votre poste de travail
-- Accès à la console du compte AWS dédié à votre formation
-- Access key AWS
-- Secret key AWS
-- Digit (numéro unique)
+- Accès à la [console](https://645860290752.signin.aws.amazon.com/console) du compte AWS dédié à votre formation
+- Informations du tableau ci-dessous
+
+| Nom             | Prénom       | AWS Console username      | AWS Console password | AWS Access key       | AWS Secret key                           | Digit |
+|-----------------|--------------|---------------------------|----------------------|----------------------|------------------------------------------|-------|
+| ARDOUIN         | Jean-Charles | jean-charles-ardouin      | 3gS}1$i9             | AKIAZMYCF6DAHXINWSZK | iqUl0KpmY1HbRdIc9cPMMmmRIhc7OSqHUp9o2c4Q | 01    |
+| BAUDRY          | Samuel       | samuel-baudry             | s_3\|Y4+c            | AKIAZMYCF6DADI53CK5C | Ppy2iltkzIfowPzKAiCNxJ+iTv5uAr4jzMqQjRjO | 02    |
+| BERNARD         | Christophe   | christophe-bernard        | n#O7dqC*             | AKIAZMYCF6DANCAT2LM3 | 3Ued67ZuyTCdW8/wLtdgo2o9lXrztuudZR8OOAI4 | 03    |
+| BOUCHETA        | Mohamed      | mohamed-boucheta          | vZ9fB@^'             | AKIAZMYCF6DAMIVV5ZSI | bSTqxrQXGrHZHyh9LhIN506RIA4hyt+CBkuSXLtv | 04    |
+| CUNHA DE ARAUJO | Jean-Paul    | jean-paul-cunha-de-araujo | Bk\|3G3%T            | AKIAZMYCF6DAMEF7FQMG | eavNq2GWzFIiZnGes83dEcTuHXei6HZRw7PLuqK6 | 05    |
+| RIVIER          | Nicolas      | nicolas-rivier            | es5RpW5\|            | AKIAZMYCF6DAH5Z23IEU | TtngouyM25hCw5XD+kO3qJrig99CI0OHVocIkqVo | 06    |
+| TAVERNIER       | David        | david-tavernier           | i(cB254+             | AKIAZMYCF6DACJOOZRPL | U4zeBmd1P7magFN/jrRJuDL2jC/xKhq0FXrK4NmI | 07    |
 
 ## Préparation de l'espace de travail
 
@@ -45,20 +53,9 @@ Sur votre poste de travail, créez un répertoire nommé nuumfactory-labs dans l
 
 # Installation de terraform
 
-## Téléchargement du binaire
+Installez **terraform** sur votre poste de travail en suivant les indications de la [documentation](https://developer.hashicorp.com/terraform/install).
 
-Téléchargez le le fichier [terraform.exe](assets/terraform.exe) et placez-le à la racine du répertoire nuumfactory-labs.
-
-A ce stade vous pouvez dès à présent utiliser terraform depuis votre interface de ligne de commande, pour cela vous devrez d'abord vous placer dans le répertoire qui contient le fichier terraform.exe. Afin de s’affranchir de cette contrainte, ajoutez ce répertoire dans la variable d’environnement **Path** de Windows :
-
-- Depuis le menu **Démarrer**, tapez « variables » et sélectionnez **Modifier les variables d’environnement système**
-- Au bas de la fenêtre qui s’ouvre, cliquez sur la case **Variables d’environnement…**
-- Dans la section « Variables système », sélectionnez la variable **Path** et cliquez sur **Modifier…**
-- Cliquez sur **Nouveau** puis sur **Parcourir…**, et sélectionnez le dossier qui contient votre fichier terraform.exe
-
-Une fois cette opération effectuée, vous pourrez exécuter terraform depuis n’importe quel emplacement de votre poste de travail.
-
-Pour information, le binaire de terraform est téléchargeable depuis le [site officiel](https://developer.hashicorp.com/terraform/downloads).
+Si vous êtes sous Windows, n'oubliez pas d'ajouter le binaire téléchargé à votre **Path**.
 
 ## Test d'utilisation
 
